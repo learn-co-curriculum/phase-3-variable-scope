@@ -1,13 +1,45 @@
 # Method Scope
 
 ## Objectives
+
 1. Understand the concept of scope. 
 2. Learn the scope of a method. 
-3. Learn the scope of a local variable. 
+3. Learn the scope of a local variable.
+
+
+## Introduction 
+
+Naming variables is hard, but it is important. We need our code to be as descriptive as possible. Any other developer reading over one of our programs should be able to understand what our code does. A big part of this is having variable (and method) names that are sensical and descriptive. 
+
+Our variable names should be descriptive of what they hold, but they should also be concise. This can be difficult to achieve. You might even be worrying that you'll run out of unique, descriptive and concise variable names. Don't worry though, all programming languages have what is called **scope**. Scope means that not all variable exist everywhere in a program. If they did, then some variable that you'd be writing in file A, could accidentally overwrite a variable made by your friend in file B. Having a scope for variables allows you to have greater confidence when creating variables that you aren't overwriting someone else's work.
 
 ## What is Scope?
 
-Methods in ruby create their own scope. "Scope" refers to the areas of your program in which certain data is available to you. **Any local variable created outside of a method will be unavailable inside of a method. In addition, local variables created inside of a method 'fall out of scope' once you're outside the method.**
+Methods in ruby create their own scope. "Scope" refers to the areas of your program in which certain data is available to you. **Any local variable created outside of a method will be unavailable inside of a method. In addition, local variables created inside of a method (i.e. in between the `def` and `end` keywords of a method) 'fall out of scope' once you're outside the method.**
+
+Let's take a look at the following example:
+
+```ruby
+name = "Joe"
+
+def greeting(name)
+   puts "Hello, #{name}"
+end
+```
+
+In this code snippet, we have a variable, `name`, set equal to a string, `"Joe"`. Then, we define a method, `#greeting` that takes in an argument of name. Are the `name` variable that is set equal to `"Joe"` and the `name` variable we are using as a parameter (or argument) for our `#greeting` method definition the same? 
+
+If we call our greeting method in the following way:
+
+```ruby
+greeting("Sophie")
+```
+
+What do we expect to be outputted to the terminal?
+
+In this case, the above method invocation would `puts` out `Hello, Sophie` to the terminal. It is true that we are setting a variable, `name`, equal to `"Joe"` in this code snippet. But, we are not using *that* variable anywhere else in our code. The `name` argument of the `#greeting` method is just a placeholder. It means: when we call the `#greeting` method with an argument of, say, for example, `"Sophie"`, set the variable `name` *inside of the method* equal to that string. 
+
+The `name` variable inside of the `#greeting` method is different from the `name` variable that we set equal to `"Joe"` outside of the method. The `#greeting` method has it's own scope and variables inside of it don't know about variables outside of it and vice versa. 
 
 ## Method Scope in Ruby
 
