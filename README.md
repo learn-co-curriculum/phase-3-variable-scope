@@ -1,17 +1,21 @@
 # Method Scope
 
+## Overview
+
+In this lesson, we'll discuss method scope and local variable scope. 
+
 ## Objectives
 
-1. Understand the concept of scope. 
-2. Learn the scope of a method. 
-3. Learn the scope of a local variable.
+1. Explain how scope prevents you from accidentally overwriting previous work.
+2. Differentiate between the functionality of local variables created inside and outside of methods. 
+3. Define methods that pass variables in as arguments.
 
 
-## Introduction 
+## Variable Names and Scope 
 
 Naming variables is hard, but it is important. We need our code to be as descriptive as possible. Any other developer reading over one of our programs should be able to understand what our code does. A big part of this is having variable (and method) names that are sensical and descriptive. 
 
-Our variable names should be descriptive of what they hold, but they should also be concise. This can be difficult to achieve. You might even be worrying that you'll run out of unique, descriptive and concise variable names. Don't worry though, all programming languages have what is called **scope**. Scope means that not all variable exist everywhere in a program. If they did, then some variable that you'd be writing in file A, could accidentally overwrite a variable made by your friend in file B. Having a scope for variables allows you to have greater confidence when creating variables that you aren't overwriting someone else's work.
+Our variable names should be descriptive of what they hold, but they should also be concise. This can be difficult to achieve. You might even be worrying that you'll run out of unique, descriptive and concise variable names. Don't worry though, all programming languages have what is called **scope**. Scope means that not all variables exist everywhere in a program. If they did, then a variable that you'd be writing in file A could accidentally overwrite a variable made by your friend in file B. Having a scope for variables allows you to have greater confidence that you aren't overwriting someone else's work when you create variables.
 
 ## What is Scope?
 
@@ -27,7 +31,7 @@ def greeting(name)
 end
 ```
 
-In this code snippet, we have a variable, `name`, set equal to a string, `"Joe"`. Then, we define a method, `#greeting` that takes in an argument of name. Are the `name` variable that is set equal to `"Joe"` and the `name` variable we are using as a parameter (or argument) for our `#greeting` method definition the same? 
+In this code snippet, we have a variable, `name`, set equal to a string, `"Joe"`. Then we define a method, `#greeting`,  that takes in an argument of name. Are the `name` variable that is set equal to `"Joe"` and the `name` variable we are using as a parameter (or argument) for our `#greeting` method definition the same? Let's see. 
 
 If we call our greeting method in the following way:
 
@@ -37,9 +41,9 @@ greeting("Sophie")
 
 What do we expect to be outputted to the terminal?
 
-In this case, the above method invocation would `puts` out `Hello, Sophie` to the terminal. It is true that we are setting a variable, `name`, equal to `"Joe"` in this code snippet. But, we are not using *that* variable anywhere else in our code. The `name` argument of the `#greeting` method is just a placeholder. It means: when we call the `#greeting` method with an argument of, say, for example, `"Sophie"`, set the variable `name` *inside of the method* equal to that string. 
+In this case, the above method invocation would `puts` out `Hello, Sophie` to the terminal. It is true that we are setting a variable, `name`, equal to `"Joe"` in this code snippet. But we are not using *that* variable anywhere else in our code. The `name` argument of the `#greeting` method is just a placeholder. It means: when we call the `#greeting` method with an argument of, say, for example, `"Sophie"`, set the variable `name` *inside of the method* equal to that string argument. 
 
-The `name` variable inside of the `#greeting` method is different from the `name` variable that we set equal to `"Joe"` outside of the method. The `#greeting` method has it's own scope and variables inside of it don't know about variables outside of it and vice versa. 
+The `name` variable inside of the `#greeting` method is different from the `name` variable that we set equal to `"Joe"` outside of the method. The `#greeting` method has its own scope, and variables inside of it don't know about variables outside of it and vice versa. 
 
 ## Method Scope in Ruby
 
