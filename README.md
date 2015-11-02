@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lesson, we'll discuss method scope and local variable scope. 
+In this lesson, we'll introduce the concepts of method scope and variable scope. 
 
 ## Objectives
 
