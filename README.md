@@ -13,7 +13,7 @@ In this lesson, we'll introduce the concepts of method scope and variable scope.
 
 ## Variable Names and Scope 
 
-Naming variables is hard, but it is important. We need our code to be as descriptive as possible. Any other developer reading over one of our programs should be able to understand what our code does. A big part of this is having variable (and method) names that are sensical and descriptive. 
+Naming variables is hard, but it is important. We need our code to be as descriptive as possible. Any other developer reading over one of our programs should be able to understand what our code does. A big part of this is having variable (and method) names that are sensible and descriptive. 
 
 Our variable names should be descriptive of what they hold, but they should also be concise. This can be difficult to achieve. You might even be worrying that you'll run out of unique, descriptive and concise variable names. Don't worry though, all programming languages have what is called **scope**. Scope means that not all variables exist everywhere in a program. If they did, then a variable that you'd be writing in file A could accidentally overwrite a variable made by your friend in file B. Having a scope for variables allows you to have greater confidence that you aren't overwriting someone else's work when you create variables.
 
