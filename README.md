@@ -41,7 +41,7 @@ greeting("Sophie")
 
 What do we expect to be outputted to the terminal?
 
-In this case, the above method invocation would `puts` out `Hello, Sophie` to the terminal. It is true that we are setting a variable, `name`, equal to `"Joe"` in this code snippet. But we are not using *that* variable anywhere else in our code. The `name` argument of the `#greeting` method is just a placeholder. It means: when we call the `#greeting` method with an argument of, say, for example, `"Sophie"`, set the variable `name` *inside of the method* equal to that string argument. 
+In this case, the above method invocation would `puts` out `Hello, Sophie` to the terminal. It is true that we are setting a variable, `name`, equal to `"Joe"` in this code snippet. But we are not using *that* variable anywhere else in our code. The `name` argument of the `#greeting` method is just a placeholder. It means: when we call the `#greeting` method with an argument of, say, `"Sophie"`, set the variable `name` *inside of the method* equal to that string argument. 
 
 The `name` variable inside of the `#greeting` method is different from the `name` variable that we set equal to `"Joe"` outside of the method. The `#greeting` method has its own scope, and variables inside of it don't know about variables outside of it and vice versa. 
 
