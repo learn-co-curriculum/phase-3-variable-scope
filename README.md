@@ -103,4 +103,4 @@ im_trapped_in_the_method
 
 Remember: A variable defined inside a method can't leave that method. It is not available to your program outside of the method. A variable defined outside of a method can only be made available to the code inside the method if you pass that variable in to the method as an argument. 
 
-<a href='https://learn.co/lessons/method-scope' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/method-scope' title='Method Scope'>Method Scope</a> on Learn.co and start learning to code for free.</p>
