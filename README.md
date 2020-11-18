@@ -80,7 +80,7 @@ princess_peaches_castle(evil_monster)
 
 ```
 
-And now Mario can start his adventure.
+The method call, which happens outside the method itself, has access to our `evil_monster` variable. We can therefore make the value stored in `evil_monster` available to `princess_peaches_castle` by passing it as an argument when we call the method. So now Mario can start his adventure.
 
 So far, we've seen that variables defined outside of methods are not available inside methods (unless we pass them in as arguments). This works the other way around as well: variables defined inside of methods are not available outside of those methods. Let's take a look. 
 
