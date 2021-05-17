@@ -1,15 +1,14 @@
 # Method Scope
 
-## Overview
+## Learning Goals
+
+- Explain how scope prevents you from accidentally overwriting previous work.
+- Differentiate between the functionality of local variables created inside and outside of methods. 
+- Define methods that pass variables in as arguments.
+
+## Introduction
 
 In this lesson, we'll introduce the concepts of method scope and variable scope. 
-
-## Objectives
-
-1. Explain how scope prevents you from accidentally overwriting previous work.
-2. Differentiate between the functionality of local variables created inside and outside of methods. 
-3. Define methods that pass variables in as arguments.
-
 
 ## Variable Names and Scope 
 
