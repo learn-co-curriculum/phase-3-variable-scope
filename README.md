@@ -60,7 +60,7 @@ We've defined the variable `evil_monster` *outside* of the method, `princess_pea
 
 ```ruby
 princess_peaches_castle
-# > NameError: undefined local variable or method `evil_monster' for main:Object
+#=> NameError: undefined local variable or method `evil_monster' for main:Object
 ```
 
 The `evil_monster` variable is out of scope for this method. The method can't access it **unless we pass it in as an argument**.
@@ -75,7 +75,7 @@ def princess_peaches_castle(evil_monster)
 end
 
 princess_peaches_castle(evil_monster)
-# > "Bowser is trying to kidnap Princess Peach!"
+#=> "Bowser is trying to kidnap Princess Peach!"
 
 ```
 
