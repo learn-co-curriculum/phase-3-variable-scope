@@ -1,4 +1,4 @@
-# Method Scope
+# Variable Scope
 
 ## Learning Goals
 
