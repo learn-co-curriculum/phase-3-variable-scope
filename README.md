@@ -75,7 +75,7 @@ end
 ```
 
 We've defined the variable `evil_monster` _outside_ of the method,
-`princess_peaches_castle`. Then, we try to call on the `evil_monster` variable
+`#princess_peaches_castle`. Then, we try to call on the `evil_monster` variable
 inside that method. Watch what happens when we invoke the method:
 
 ```rb
@@ -117,7 +117,7 @@ princess_peaches_castle(evil_monster)
 
 The method call, which happens outside the method itself, has access to our
 `evil_monster` variable. We can therefore make the value stored in
-`evil_monster` available to `princess_peaches_castle` by passing it as an
+`evil_monster` available to `#princess_peaches_castle` by passing it as an
 argument when we call the method. So now Mario can start his adventure.
 
 So far, we've seen that variables defined outside of methods are not available
@@ -148,7 +148,8 @@ called "local" because they don't ever leave the scope they're defined in. There
 are other types of variables in Ruby as well, which can be defined using
 different naming conventions:
 
-- Local variables: must start with a lowercase letter or an underscore (\_): `name = "Lucy"`
+- Local variables: must start with a lowercase letter or an underscore (\_):
+  `name = "Lucy"`
 - Global variables: must start with a dollar sign ($): `$name = "Lucy"`
 - Instance variables: must start with an at symbol (@) `@name = "Lucy"`)
 - Class variables: must start with two at symbols (@@) (`@@name = "Lucy"`)
