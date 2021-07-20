@@ -93,7 +93,7 @@ from our function:
 const evilMonster = "Bowser";
 
 function princessPeachesCastle() {
-  console.log(`${evil_monster} is trying to kidnap Princess Peach!`);
+  console.log(`${evilMonster} is trying to kidnap Princess Peach!`);
 }
 ```
 
